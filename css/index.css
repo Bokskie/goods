@@ -1,0 +1,321 @@
+header
+{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--bg-secondary-color);
+}
+/*-------CONTAINER NAVBAR----------------*/
+.container-navbar
+{
+    display: flex;
+    align-items: center;
+}
+/*----------------NAVBAR SOCIAL MEDIA LINKS-----------------*/
+.container-navbar .navbar-social-media-link
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 1px 1px 6rem;
+    font-family: sans-serif;
+}
+.container-navbar .navbar-social-media-link h1
+{
+    color: var(--bg-primary-color);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    font-size: var(--fs-x-small);
+}
+.container-navbar .navbar-social-media-link ul
+{
+    display: flex;
+}
+.container-navbar .navbar-social-media-link ul li
+{
+    list-style: none;
+}
+.container-navbar .navbar-social-media-link ul li a
+{
+    padding: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: var(--fs-small);
+}
+.container-navbar .navbar-social-media-link span 
+{
+    color: #ffffff;
+}
+.container-navbar .navbar-social-media-link ul li a i 
+{
+    font-size: var(--fs-x-small);
+    background-color: var(--bg-secondary-color);
+    border: 3px solid #ffffff;
+    border-radius: 3rem;
+    position: fixed;
+    z-index: 1;
+}
+/*----------------NAVBAR SPACE-----------------*/
+.container-navbar .navbar_space
+{
+    flex: 1;
+}
+/*----------------NAVBAR LINK-----------------*/
+.container-navbar .navbar-link
+{
+    font-family: sans-serif;
+    padding: 1px 6rem 1px 1px;
+    gap: 1rem;
+}
+.container-navbar .navbar-link ul
+{
+    display: flex;
+}
+.container-navbar .navbar-link ul li
+{
+    list-style: none;
+}
+.container-navbar .navbar-link ul li ul .user-info
+{
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    width: 200px;
+    right: 20px;
+    height: 160px; 
+    display: none;
+    line-height: 22px;
+}
+.container-navbar .navbar-link ul li ul .user-info li:hover 
+{
+    background-color: var(--bg-primary-color);
+}
+.container-navbar .navbar-link ul li ul li a 
+{
+    color: #000000;
+}
+.container-navbar .navbar-link ul li:hover ul  .user-info 
+{
+    display: block;
+}
+.container-navbar .navbar-link ul li a 
+{
+    text-decoration: none;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: var(--fs-small);
+    display: flex;
+    align-items: center;
+}
+.container-navbar .navbar-link ul li a img 
+{
+    border-radius: 3rem;
+}
+/*-------HEADER WITH SEARCH----------------*/
+.header-with-search
+{
+    display: flex;
+    height: 5.3125rem;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-------HEADER WITH SEARCH LOGO SECTION----------------*/
+.header-with-search .header-with-search_logo-section
+{
+    display: flex;
+    align-items: center;
+    padding: 2px 2px 4px 6rem;
+}
+.header-with-search .header-with-search_logo-section img 
+{
+    border-radius: 3rem;
+}
+.header-with-search .header-with-search_logo-section h1
+{
+    color: var(--bg-primary-color);
+    font-size: var(--fs-x-large);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+}
+.header-with-search .header-with-search_search-section
+{
+    display: flex;
+}
+.header-with-search .header-with-search_cart-section ul li
+{
+    list-style: none;
+}
+.header-with-search .header-with-search_cart-section ul li ul .add-to-cart 
+{
+    background-color: #ffffff;
+    border: 1px solid var(--bg-secondary-color);
+    width: 240px;
+    height: 400px;
+    right: 20px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+}
+.header-with-search .header-with-search_cart-section ul li ul .add-to-cart p 
+{
+    text-align: center;
+}
+.header-with-search .header-with-search_cart-section ul li:hover ul .add-to-cart 
+{
+    display: block;
+}
+.header-with-search .header-with-search_cart-section ul li a
+{
+    color: #ffffff;
+}
+/*-------HEADER WITH SEARCH_SEARCH SECTION----------------*/
+.header-with-search .header-with-search_search-section
+{
+    background-color: #ffffff;
+    padding: 4px;
+}
+.header-with-search .header-with-search_search-section input
+{
+    font-family: sans-serif;
+    border: none;
+    width: 540px;
+    padding: 6px 16px 9px 16px;
+}
+.header-with-search .header-with-search_search-section button
+{
+    background-color: var(--bg-primary-color);
+    cursor: pointer;
+    padding: 6px 16px 6px 16px;
+}
+/*-------HEADER WITH SEARCH CART SECTION----------------*/
+.header-with-search .header-with-search_cart-section
+{
+    padding: 2px 7rem 4px 5px;
+}
+.header-with-search .header-with-search_cart-section ul li a 
+{
+    font-size: var(--fs-large);
+}
+
+/*------------------------------------MAIN---------------------------------------*/
+main
+{
+    position: relative;
+    top: 141px;
+    background-color: var( --cl-secondary-white-color);
+    max-width: 100%;
+    height: auto;
+
+}
+/*-----------FULL HOME BANNER*------------------*/
+.full-home-banner
+{
+    position: relative;
+    top: 24px;
+    background-color: #ffffff;
+    width: 1200px;
+    margin: auto;
+}
+.full-home-slideshow
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #c2c2c2 2px 4px 5px 5px;
+    padding: 20px;
+}
+.full-home-slideshow .full-home_main-banner 
+{
+    box-shadow: #c2c2c2 2px 4px 5px 5px;
+}
+.full-home-slideshow .full-home_right-banner
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.full-home-slideshow .full-home_right-banner img 
+{
+    box-shadow: #c2c2c2 2px 4px 5px 5px;
+}
+
+
+/*-----------MAIN CONTAINER*------------------*/
+.mainContainer
+{
+    position: relative;
+    top: 80px;
+    background-color: #ffffff;
+    width: 1200px;
+    margin: auto;
+}
+.header-title
+{
+    font-family: sans-serif;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+}
+.category-section_content
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1px 10px 10px 10px;
+}
+.category-section_content .category-list_items
+{
+    border: 4px solid var(--cl-secondary-white-color);
+    background-color: #ffffff;
+}
+.category-section_content .category-list_items img 
+{
+    border: 4px solid var(--cl-secondary-white-color);
+    border-radius: 100%;
+    mix-blend-mode: darken;
+}
+/*---------------CATEGORY CONTENT TEXT----------------*/
+.category-section_content .category-list_items .category-list_items_text
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: var(--fs-small);
+}
+/*--------------------SECTION RECOMMEND PRODUCTS--------------*/
+.section-recommend-products
+{
+    position: relative;
+    top: 144px;
+    background-color: #ffffff;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.section-recommend-products_title
+{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 4px solid var(--bg-primary-color);
+    font-size: var(--fs-medium);
+    font-weight: 600;
+}
+.section-recommend-products .whole-product-section
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.section-recommend-products .whole-product-section .products 
+{
+    width: 226px;
+    height: 200px;
+    border: 4px solid var(--cl-secondary-white-color);
+}
+/*-------------FOOTER CONTENT----------------*/
+.footer-content
+{
+
+    width: 100%;
+    height: 1210px;
+}
